@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inglês do Zero | Plataforma de Estudos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<aside class="sidebar" id="sidebar">
+  <a class="brand" href="#"><b>EN</b><span><strong>Inglês do Zero</strong><small>PLATAFORMA DE ESTUDOS</small></span></a>
+  <p class="side-label">MENU PRINCIPAL</p>
+  <nav>
+    <button class="nav active" data-page="inicio">⌂　Visão geral</button>
+    <button class="nav" data-page="modulos">▤　Meus módulos</button>
+    <button class="nav" data-page="aulas">▣　Aulas</button>
+    <button class="nav" data-page="vocabulario">文　Vocabulário</button>
+    <button class="nav" data-page="conversacao">☏　Conversação</button>
+    <button class="nav" data-page="exercicios">✓　Exercícios</button>
+    <button class="nav" data-page="leituras">▧　Leituras</button>
+  </nav>
+  <div class="goal"><b>✦ Seu objetivo</b><p>Desenvolver inglês para o ambiente profissional.</p><small>DO ZERO AO BÁSICO</small></div>
+  <button class="nav" data-page="sobre">ⓘ　Sobre o curso</button>
+</aside>
+<main>
+<header><button id="menu" class="menu">☰</button><span>Área de estudos　/　<b id="where">Visão geral</b></span><small>● Seu espaço de aprendizagem</small></header>
+
+<section id="inicio" class="page active">
+ <div class="hero"><div><label>SEU CURSO DE INGLÊS</label><h1>Vamos aprender inglês,<br><em>um passo de cada vez.</em></h1><p>Comece pelo básico, pratique todos os dias e acompanhe sua evolução.</p><button class="primary" data-go="aulas">Continuar estudando →</button></div><div class="hero-art"><div class="book">A<br><small>to Z</small></div><span class="bubble one">Hello!</span><span class="bubble two">How are you?</span><i>✦</i></div></div>
+ <div class="stats"><article><small>Aulas concluídas</small><strong id="count">0</strong><span>de 5 aulas no módulo 1</span></article><article><small>Tempo de estudo</small><strong id="time">0 min</strong><span>estimativa das aulas marcadas</span></article><article><small>Progresso geral</small><strong id="pct">0%</strong><span>continue no seu ritmo</span></article></div>
+ <div class="heading"><div><label>SEU CAMINHO</label><h2>Continue de onde parou</h2></div><button class="link" data-go="modulos">Ver módulos →</button></div>
+ <article class="module"><div class="module-art"><b>01</b><span>ABC</span><small>HELLO!</small></div><div class="module-info"><label>INICIANTE ABSOLUTO　·　5 AULAS</label><h3>Módulo 1 — Primeiros passos no inglês</h3><p>Alfabeto, pronúncia, cumprimentos, apresentação pessoal e vocabulário inicial.</p><div class="bar"><i id="bar"></i></div><small id="progress">0 de 5 aulas concluídas</small><button class="primary" data-go="aulas">Acessar módulo →</button></div></article>
+ <div class="heading"><div><label>PARA PRATICAR</label><h2>Seu estudo de hoje</h2></div></div>
+ <div class="quick"><button data-go="vocabulario">文 <b>Vocabulário</b><small>Aprenda palavras novas</small></button><button data-go="conversacao">☏ <b>Conversação</b><small>Pratique diálogos</small></button><button data-go="exercicios">✓ <b>Exercícios</b><small>Teste o que aprendeu</small></button></div>
+</section>
+
+<section id="modulos" class="page">
+ <div class="pagehead"><label>TRILHA DE APRENDIZADO</label><h1>Meus módulos</h1><p>O curso será construído gradualmente. Começaremos pelo nível iniciante absoluto.</p></div>
+ <article class="module-row"><b>01</b><div><label>DISPONÍVEL</label><h3>Primeiros passos no inglês</h3><p>Alfabeto, pronúncia, cumprimentos, apresentação pessoal e vocabulário.</p><div class="bar"><i id="bar2"></i></div><small id="progress2">0 de 5 aulas concluídas</small></div><button class="outline" data-go="aulas">Estudar →</button></article>
+ <article class="module-row disabled"><b>02</b><div><label>PRÓXIMO</label><h3>Números, datas e rotina</h3><p>Números, dias, meses, horários e vocabulário cotidiano.</p></div><small>Em preparação</small></article>
+ <article class="module-row disabled"><b>03</b><div><label>FUTURO</label><h3>Formando frases</h3><p>Pronomes pessoais, verbo To Be e construção de frases.</p></div><small>Em preparação</small></article>
+ <article class="module-row disabled"><b>04</b><div><label>FUTURO</label><h3>Inglês para o trabalho</h3><p>Profissões, apresentação profissional, entrevistas e comunicação.</p></div><small>Em preparação</small></article>
+</section>
+
+<section id="aulas" class="page">
+ <div class="pagehead"><label>MÓDULO 01 · 5 AULAS</label><h1>Primeiros passos no inglês</h1><p>Leia a explicação, pratique em voz alta e marque a aula quando terminar.</p></div>
+ <div class="lesson-layout"><div id="lesson-list" class="lesson-list"></div><article id="lesson" class="lesson"><div class="placeholder">📘<h3>Escolha uma aula</h3><p>Selecione uma aula ao lado para começar.</p></div></article></div>
+</section>
+
+<section id="vocabulario" class="page">
+ <div class="pagehead"><label>BANCO DE PALAVRAS</label><h1>Vocabulário</h1><p>Conheça palavras úteis para o cotidiano e para o ambiente profissional.</p></div>
+ <div class="searchrow"><input id="search" placeholder="Pesquisar em inglês ou português..."><small id="wordcount"></small></div><div id="words" class="words"></div>
+</section>
+
+<section id="conversacao" class="page">
+ <div class="pagehead"><label>SPEAKING PRACTICE</label><h1>Conversação</h1><p>Leia em voz alta. Alterne entre os personagens e tente falar sem olhar a tradução.</p></div>
+ <article class="dialogue"><label>DIÁLOGO 01 · PRIMEIRO CUMPRIMENTO</label><div class="line"><b>A</b><div><strong>Hello! Good morning!</strong><small>Olá! Bom dia!</small></div></div><div class="line right"><b>B</b><div><strong>Hi! How are you?</strong><small>Oi! Como você está?</small></div></div><div class="line"><b>A</b><div><strong>I'm fine, thank you.</strong><small>Estou bem, obrigado(a).</small></div></div><div class="line right"><b>B</b><div><strong>You're welcome!</strong><small>De nada!</small></div></div><aside>Dica: repita cada fala três vezes. Depois faça os dois personagens sem consultar a tradução.</aside></article>
+ <article class="dialogue"><label>DIÁLOGO 02 · CONHECENDO ALGUÉM</label><div class="line"><b>A</b><div><strong>Hello! What is your name?</strong><small>Olá! Qual é o seu nome?</small></div></div><div class="line right"><b>B</b><div><strong>My name is Luiz. And you?</strong><small>Meu nome é Luiz. E você?</small></div></div><div class="line"><b>A</b><div><strong>My name is John. Nice to meet you!</strong><small>Meu nome é John. Prazer em conhecer você!</small></div></div><div class="line right"><b>B</b><div><strong>Nice to meet you too!</strong><small>Prazer em conhecer você também!</small></div></div><aside>Experimente trocar “Luiz” e “John” pelo seu nome e por outro nome.</aside></article>
+ <article class="resource"><div><label>TREINO EXTERNO</label><h3>Ouça e repita</h3><p>Encontre vídeos com pronúncia natural e repita as expressões.</p></div><a class="outline" href="https://www.youtube.com/results?search_query=english+greetings+beginner+conversation" target="_blank" rel="noopener">Encontrar vídeos ↗</a></article>
+</section>
+
+<section id="exercicios" class="page">
+ <div class="pagehead"><label>PRATIQUE O QUE APRENDEU</label><h1>Exercícios</h1><p>Responda às questões e confira a correção com explicações.</p></div>
+ <article class="quiz"><div class="quiztop"><label>AVALIAÇÃO 01</label><small id="qnumber">Questão 1 de 5</small></div><div class="bar"><i id="qbar"></i></div><div id="question"></div><div class="quiz-actions"><button class="outline" id="reset">Reiniciar</button><button class="primary" id="next" disabled>Próxima questão →</button></div><div id="result" class="result hidden"></div></article>
+</section>
+
+<section id="leituras" class="page">
+ <div class="pagehead"><label>READING PRACTICE</label><h1>Leituras</h1><p>Leia primeiro em inglês, tente entender e depois confira a tradução.</p></div>
+ <article class="reading"><label>LEITURA 01 · INICIANTE</label><h2>My First Introduction</h2><p class="english">Hello! My name is John. I am from Brazil. I am a student. I like computers and technology. I want to learn English because it is important for my future career.</p><button class="outline" id="translate">Mostrar tradução</button><div id="translation" class="translation hidden"><b>Tradução</b><p>Olá! Meu nome é John. Eu sou do Brasil. Sou estudante. Gosto de computadores e tecnologia. Quero aprender inglês porque ele é importante para minha futura carreira.</p></div></article>
+ <article class="reading"><label>INTERPRETAÇÃO</label><h3>Responda sobre o texto</h3><ol><li>What is his name?</li><li>Where is he from?</li><li>Is he a student?</li><li>Why does he want to learn English?</li></ol><small>Respostas: John; Brazil; Yes, he is; because English is important for his future career.</small></article>
+</section>
+
+<section id="sobre" class="page">
+ <div class="pagehead"><label>SOBRE O PROJETO</label><h1>Seu curso, seu ritmo.</h1><p>Uma trilha criada para começar do zero e desenvolver comunicação em inglês para o trabalho.</p></div>
+ <div class="about"><article><b>🎯</b><h3>Objetivo</h3><p>Construir uma base para compreender e utilizar o inglês em situações cotidianas e profissionais.</p></article><article><b>📚</b><h3>Método</h3><p>Explicações em português, exemplos em inglês, pronúncia aproximada e prática gradual.</p></article><article><b>⏱</b><h3>Rotina</h3><p>Uma hora por dia: revisão, aula, escuta, conversação, exercícios e leitura.</p></article></div>
+ <article class="reading"><h2>Estrutura de uma hora de estudo</h2><p>Revisão — 10 min</p><p>Aula explicativa — 15 min</p><p>Vídeo e escuta — 10 min</p><p>Conversação — 10 min</p><p>Exercícios — 10 min</p><p>Leitura — 5 min</p></article>
+</section>
+<footer>INGLÊS DO ZERO <span>Aprender um pouco todos os dias faz diferença.</span></footer>
+</main><script src="js/app.js"></script>
+</body></html>
